@@ -50,7 +50,6 @@ public class Word {
                 wordWithStars.append("*");
             }
         }
-        System.out.println(wordWithStars.toString());
         return wordWithStars.toString();
     }
 
