@@ -1,3 +1,7 @@
+package model;
+
+import exception.WrongWordLengthException;
+
 public class Word {
 
     private String word;
