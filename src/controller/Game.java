@@ -1,3 +1,7 @@
+package controller;
+
+import model.*;
+import exception.*;
 public class Game {
 
     private Word word;
@@ -5,13 +9,22 @@ public class Game {
     private int attempts;
     private int delta = 5;
 
-
     public int getBalance() {
         return balance;
     }
 
     public int getAttempts() {
         return attempts;
+    }
+
+    public Word getWord() {
+        return word;
+    }
+
+    public Game(){}
+
+    public Game(Word word){
+        this.word=word;
     }
 
     public void startGame(String w, String d) {

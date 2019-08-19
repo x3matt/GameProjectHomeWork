@@ -1,17 +1,24 @@
-import org.junit.After;
-import org.junit.Rule;
-import org.junit.Test;
+package tests;
+import exception.*;
+import controller.*;
+import org.junit.*;
 import org.junit.rules.TestName;
+import org.junit.runners.MethodSorters;
 
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
-
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class GameTest {
     @Rule
     public TestName testName = new TestName();
     @After
     public void displayTestNameAfterTest(){
         System.out.println("Test finished :"+testName.getMethodName());
+    }
+
+    @BeforeClass
+    public static void start(){
+        System.out.println("Started tests of GameTest.class");
     }
 
     @Test

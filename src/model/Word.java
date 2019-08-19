@@ -1,3 +1,7 @@
+package model;
+
+import exception.WrongWordLengthException;
+
 public class Word {
 
     private String word;
@@ -50,7 +54,6 @@ public class Word {
                 wordWithStars.append("*");
             }
         }
-        System.out.println(wordWithStars.toString());
         return wordWithStars.toString();
     }
 
